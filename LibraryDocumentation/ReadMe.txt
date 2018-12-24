@@ -1,0 +1,1 @@
+﻿This project is not in the solution build configuration, to build this project right click on it and select Build.

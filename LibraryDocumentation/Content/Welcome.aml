@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="2f8e024e-acf9-4b82-9819-1b9981c0b8e5" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>This documentation provides assistance for changing data connection strings from a Windows Forms project configuration file.</para>
+		</introduction>
+
+		<section>
+			<title>Getting Started</title>
+			<content>
+				<para>When working with managed data providers using a connection and command object residing in a data class or directly in a windows form.</para>
+
+				<list class="bullet">
+					<listItem>
+						<para>Open project properties to the Settings tab.</para>
+					</listItem>
+				  <listItem>
+				    <para>Create one or more settings of type (Connection String), provide a name and under Value a valid connection string.</para>
+				  </listItem>
+				  <listItem>
+				    <para>Add references to ConfigurationLibrary and ExtensionsLibrary_vb.</para>
+				  </listItem>
+				  <listItem>
+				    <para>In the form which will interact with data, add a private variable for ProjectConnections (see Basics project form1).</para>
+				  </listItem>
+				  <listItem>
+				    <para>Place a ComboBox or ListBox on the form and set Items (from the private variable above) as the DataSource to the selected control.</para>
+				  </listItem>
+				  <listItem>
+				    <para>Get the connection string of a selected item in the control by casting the currently selected item to ConnectionInfo and access the ConnectionString property and use ConnectionString for your data provider connection object.</para>
+				  </listItem>
+				</list>
+
+				<para>To work with a TableAdapter, start at bullet three above.</para>
+			</content>
+		</section>
+    <section>
+      <title>ConnectionComboBox</title>
+      <content>
+        <para>This ComboBox provides additional properties to work with the connection library, for more information review the documentation.</para>
+        <para>Basic usage is to include WindowsFormControls project in your Visual Studio solution, build the project and the ComboBox will appear
+        in the Visual Studio toolbox when a form is displayed. Set the DataSource to present named connection objects.</para>
+      </content>
+    </section>
+	</developerConceptualDocument>
+</topic>
