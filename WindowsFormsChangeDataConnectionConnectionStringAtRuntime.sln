@@ -12,7 +12,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9A4DA96-5B7F-467E-823D-EC308FD4DC23}"
 	ProjectSection(SolutionItems) = preProject
 		readme.md = readme.md
-		ReadME.txt = ReadME.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{EAB5ADCA-856B-4419-8555-F16A5120372B}"
